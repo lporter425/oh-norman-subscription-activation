@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oh Norman — Subscription Activation Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    @font-face {
+      font-family: "SharpGroteskBold";
+      src: url("https://cdn.shopify.com/s/files/1/0790/2049/1041/files/SharpGroteskBold-25.woff") format("woff");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "SharpGroteskMedium";
+      src: url("https://cdn.shopify.com/s/files/1/0790/2049/1041/files/SharpGroteskMedium-22.woff") format("woff");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "SharpSans-Book";
+      src: url("https://cdn.shopify.com/s/files/1/0790/2049/1041/files/SharpSans-Book.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+    }
+    body { margin: 0; padding: 32px 16px; background: #e8e8e8; font-family: "SharpSans-Book", "Open Sans", Arial, sans-serif !important; line-height: 1.4 !important; }
+    .preview-label { max-width: 600px; margin: 0 auto 8px; font-size: 13px; color: #666; text-align: center; }
+    .preview-note { max-width: 600px; margin: 0 auto 16px; font-size: 12px; color: #888; text-align: center; line-height: 1.4; }
+    .email-wrapper { max-width: 600px; margin: 0 auto; background: #F3EDE1; box-shadow: 0 4px 24px rgba(0,0,0,0.12); font-family: "SharpSans-Book", "Open Sans", Arial, sans-serif !important; }
+    .on-heading { font-family: "SharpGroteskBold", "Open Sans", Arial, sans-serif !important; font-weight: 700 !important; color: #960000 !important; text-align: left !important; margin: 0 0 20px; font-size: 32px; line-height: 1.4 !important; }
+    .on-body { font-family: "SharpSans-Book", "Open Sans", Arial, sans-serif !important; color: #960000 !important; text-align: left !important; line-height: 1.4 !important; font-size: 15px; margin: 0 0 16px; }
+    .on-section-headline { font-family: "SharpGroteskBold", "Open Sans", Arial, sans-serif !important; font-weight: 700 !important; color: #960000 !important; text-align: left !important; line-height: 1.4 !important; font-size: 25px; margin: 0 0 16px; }
+    .on-nav-link,
+    .on-nav-link span { font-family: "SharpGroteskMedium", "Open Sans", Arial, sans-serif !important; color: #F3EDE1 !important; text-decoration: none !important; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500 !important; line-height: 1.4 !important; }
+    .on-footer-text { font-family: "SharpSans-Book", "Open Sans", Arial, sans-serif !important; color: #F3EDE1 !important; font-size: 12px; text-align: center !important; margin: 0; line-height: 1.4 !important; }
+    .button__cell { background: #960000 !important; padding: 14px 20px; text-align: center; }
+    .button__text { font-family: "SharpSans-Book", "Open Sans", Arial, sans-serif !important; color: #ffffff !important; text-decoration: none !important; font-size: 13px; font-weight: 600; display: block; width: 100%; line-height: 1.4 !important; }
+    @media only screen and (max-width: 600px) {
+      .on-mascot { width: 180px !important; max-width: 180px !important; margin: 0 0 -48px 0 !important; }
+    }
+  </style>
+</head>
+<body>
+  <p class="preview-label">Oh Norman subscription activation preview</p>
+  <p class="preview-note">Type, header, footer, and chrome match <code>lporter425/oh-norman-order-confirmation</code>. Headlines use Sharp Grotesk Bold; body uses Sharp Sans Book with Open Sans fallback. Paste <code>templates/subscription-activation.html</code> into Recharge.</p>
+  <div class="email-wrapper">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td style="background:#960000;padding:28px 40px;text-align:left;">
+          <a href="https://ohnorman.com/?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=shop" style="text-decoration:none;">
+            <img src="https://cdn.shopify.com/s/files/1/0790/2049/1041/files/Layer_1-2.png" alt="Oh Norman!" width="200" height="30" style="display:block;margin:0;max-width:200px;width:200px;height:auto;border:0;">
+          </a>
+        </td>
+      </tr></table>
+
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td style="background:#F3EDE1;padding:48px 40px 8px;text-align:left;">
+          <h1 class="on-heading">You're On Repeat!</h1>
+          <p class="on-body">Hi Lindsay,</p>
+          <p class="on-body" style="margin:0 0 28px;">Thank you for subscribing. Your first order is locked in, and the good stuff will keep showing up — no extra errands required. Review your details below. You can skip, swap, or cancel anytime.</p>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 8px;"><tr>
+            <td class="button__cell">
+              <a href="https://ohnorman.com/account" class="button__text"><span style="color:#ffffff !important;">Manage subscription</span></a>
+            </td>
+          </tr></table>
+          <p class="on-body" style="margin:24px 0 0;">Questions? Email us at <a href="mailto:help@ohnorman.com" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-weight:700;text-decoration:underline;"><span style="color:#960000 !important;">help@ohnorman.com</span></a>.</p>
+        </td>
+      </tr></table>
+
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td style="background:#F3EDE1;padding:40px 40px 8px;text-align:left;">
+          <h2 class="on-section-headline">Your subscription</h2>
+
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 16px;"><tr>
+            <td valign="top" width="76" style="width:76px;padding:0 12px 0 0;">
+              <img src="https://cdn.shopify.com/s/files/1/0790/2049/1041/files/Stop_Effing_Itching_Healthy_Skin_and_Coat_Supplement.png?v=1777493278&amp;width=144" alt="Stop Effing Itching!" width="72" height="72" style="display:block;width:72px;height:72px;border:0;border-radius:4px;">
+            </td>
+            <td valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;">
+              <strong style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;font-weight:500;">Stop Effing Itching!</strong>
+              <div style="margin:8px 0 0;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;">
+                <div style="margin:0 0 4px;">&bull;&nbsp;Qty 1</div>
+                <div style="margin:0 0 4px;">&bull;&nbsp;Charges every 30 days</div>
+                <div style="margin:0;">&bull;&nbsp;Next charge September 25, 2026</div>
+              </div>
+            </td>
+            <td valign="top" align="right" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;white-space:nowrap;padding-left:8px;">$35.00</td>
+          </tr></table>
+
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 16px;"><tr>
+            <td valign="top" width="76" style="width:76px;padding:0 12px 0 0;">
+              <img src="https://cdn.shopify.com/s/files/1/0790/2049/1041/files/Oh_Norman_dog_dental_wipes_natural_teeth_cleaning_for_dogs.png?v=1777478748&amp;width=144" alt="Your Breath Effing Stinks!" width="72" height="72" style="display:block;width:72px;height:72px;border:0;border-radius:4px;">
+            </td>
+            <td valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;">
+              <strong style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;font-weight:500;">Your Breath Effing Stinks!</strong><br>
+              <span>30 wipes</span>
+              <div style="margin:8px 0 0;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;">
+                <div style="margin:0 0 4px;">&bull;&nbsp;Qty 2</div>
+                <div style="margin:0 0 4px;">&bull;&nbsp;Charges every 30 days</div>
+                <div style="margin:0;">&bull;&nbsp;Next charge September 25, 2026</div>
+              </div>
+            </td>
+            <td valign="top" align="right" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;white-space:nowrap;padding-left:8px;">$36.00</td>
+          </tr></table>
+
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #960000;">
+            <tr>
+              <td style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;padding:12px 0 6px;">Subtotal</td>
+              <td align="right" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;padding:12px 0 6px;">$71.00</td>
+            </tr>
+            <tr>
+              <td style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;padding:6px 0;">Shipping</td>
+              <td align="right" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;padding:6px 0;">$0.00</td>
+            </tr>
+            <tr>
+              <td style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;padding:6px 0;">Taxes</td>
+              <td align="right" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4;padding:6px 0;">$5.86</td>
+            </tr>
+            <tr>
+              <td style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:16px;font-weight:700;line-height:1.4;padding:12px 0 4px;">Total</td>
+              <td align="right" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:16px;font-weight:700;line-height:1.4;padding:12px 0 4px;">$76.86 USD</td>
+            </tr>
+          </table>
+
+          <p style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:12px;line-height:1.4;font-style:italic;margin:20px 0 0;text-align:left;">"Oh Norman" provides a subscription service. By subscribing to our service, you have confirmed that you accept our Terms of Service. Your subscription will automatically renew on a recurring basis at which time your credit card will be charged automatically for the subscription products until you cancel your subscription. Taxes and shipping fees may apply. You may cancel your subscription at any time from the Subscriptions section of your account.</p>
+        </td>
+      </tr></table>
+
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td style="background:#F3EDE1;padding:40px 40px 48px;text-align:left;">
+          <h3 class="on-section-headline">Have questions?</h3>
+          <p style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4;margin:0;text-align:left;">We're here to help. <a href="https://ohnorman.com/pages/contact?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=contact" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-decoration:underline;"><span style="color:#960000 !important;">Contact us</span></a> or check out our <a href="https://ohnorman.com/pages/faqs-1?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=faqs" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-decoration:underline;"><span style="color:#960000 !important;">FAQs</span></a>.</p>
+        </td>
+      </tr></table>
+
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td style="background:#FFB000;padding:40px 40px 48px;text-align:left;">
+          <h3 class="on-section-headline" style="background:#FFB000;">Made For Pets And The People Who Effing Love Them.</h3>
+          <p style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left;font-size:15px;line-height:1.4;margin:0;">All-natural supplements, treats &amp; care products in partnership with Board-Certified Veterinary Specialists. Plus, every purchase <a href="https://ohnorman.com/pages/about-us-1?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=gives_back" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-decoration:underline;"><span style="color:#960000 !important;">gives back to rescues</span></a>.</p>
+        </td>
+      </tr></table>
+
+      <table class="on-nav" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#960000;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr><td align="center" style="padding:20px 24px;border-bottom:1px solid #F3EDE1;background:#960000;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;"><a href="https://ohnorman.com/collections/our-dog-products?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=dog" class="on-nav-link" style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;font-weight:500 !important;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:#F3EDE1 !important;text-decoration:none !important;"><span style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;font-weight:500 !important;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:#F3EDE1 !important;text-decoration:none !important;">Dog</span></a></td></tr>
+          <tr><td align="center" style="padding:20px 24px;border-bottom:1px solid #F3EDE1;background:#960000;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;"><a href="https://ohnorman.com/collections/our-cat-products?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=cat" class="on-nav-link" style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;font-weight:500 !important;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:#F3EDE1 !important;text-decoration:none !important;"><span style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;font-weight:500 !important;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:#F3EDE1 !important;text-decoration:none !important;">Cat</span></a></td></tr>
+          <tr><td align="center" style="padding:20px 24px;border-bottom:1px solid #F3EDE1;background:#960000;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;"><a href="https://ohnorman.com/collections/gift-cards?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=gift_card" class="on-nav-link" style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;font-weight:500 !important;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:#F3EDE1 !important;text-decoration:none !important;"><span style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;font-weight:500 !important;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:#F3EDE1 !important;text-decoration:none !important;">Gift Card</span></a></td></tr>
+        </table>
+      </td></tr></table>
+
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td style="background:#960000;padding:28px 20px 0;text-align:center;overflow:hidden;">
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 20px;">
+            <tr>
+              <td style="padding:0 10px;"><a href="https://www.facebook.com/ohnorman/?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=facebook" style="border:0;text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0790/2049/1041/files/FFB100.png?v=1787678882" alt="Facebook" width="36" height="36" style="display:block;border:0;"></a></td>
+              <td style="padding:0 10px;"><a href="https://www.tiktok.com/@oh_norman_?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=tiktok" style="border:0;text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0790/2049/1041/files/tiktok-yellow.png" alt="TikTok" width="36" height="36" style="display:block;border:0;"></a></td>
+              <td style="padding:0 10px;"><a href="https://www.instagram.com/ohnorman/?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=instagram" style="border:0;text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0790/2049/1041/files/FFB100_2.png?v=1787678881" alt="Instagram" width="36" height="36" style="display:block;border:0;"></a></td>
+            </tr>
+          </table>
+          <p class="on-footer-text">&copy; 2026 Oh Norman!</p>
+          <p class="on-footer-text" style="font-size:11px;margin:16px 0 24px;">
+            <a href="https://ohnorman.com/pages/contact?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=contact" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#F3EDE1 !important;text-decoration:underline;"><span style="color:#F3EDE1 !important;">Contact Us</span></a> |
+            <a href="https://ohnorman.com/pages/faqs-1?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=faqs" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#F3EDE1 !important;text-decoration:underline;"><span style="color:#F3EDE1 !important;">FAQs</span></a> |
+            <a href="https://ohnorman.com/policies/terms-of-service?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=terms" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#F3EDE1 !important;text-decoration:underline;"><span style="color:#F3EDE1 !important;">Terms of Service</span></a> |
+            <a href="https://ohnorman.com/policies/privacy-policy?utm_source=recharge_email&amp;utm_medium=email&amp;utm_campaign=subscription_activation&amp;utm_content=privacy" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#F3EDE1 !important;text-decoration:underline;"><span style="color:#F3EDE1 !important;">Privacy Policy</span></a>
+          </p>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td align="right" valign="bottom" style="font-size:0;line-height:0;padding:0;">
+                <img class="on-mascot" src="https://cdn.shopify.com/s/files/1/0790/2049/1041/files/oh-norman-mascot-cream-peeking.png" alt="" width="260" style="display:block;width:260px;max-width:260px;height:auto;border:0;margin:0 0 -72px 0;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr></table>
+    </td></tr></table>
+  </div>
+</body>
+</html>

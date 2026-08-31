@@ -1,0 +1,14 @@
+{
+  "name": "oh-norman-subscription-activation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Oh Norman Recharge subscription activation email template and local preview",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 43126",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 43126"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3"
+  }
+}
