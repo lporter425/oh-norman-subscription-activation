@@ -6,9 +6,9 @@ Repo: [github.com/lporter425/oh-norman-subscription-activation](https://github.c
 
 ## Source of truth
 
-**Canonical file:** [`templates/subscription-activation.html`](templates/subscription-activation.html) (also copied to [`oh-norman-subscription-activation.html`](oh-norman-subscription-activation.html) at the repo root).
+**Canonical file:** [`oh-norman-subscription-activation.liquid`](oh-norman-subscription-activation.liquid) (also copied to [`templates/subscription-activation.liquid`](templates/subscription-activation.liquid)).
 
-That full Recharge/Jinja template is what to paste into the merchant portal. `email-preview.html` is a static sample render for local review only — do not treat the Vite preview as canonical.
+That full Recharge template is what to paste into the merchant portal. HTML copies at [`templates/subscription-activation.html`](templates/subscription-activation.html) and [`oh-norman-subscription-activation.html`](oh-norman-subscription-activation.html) stay in sync with the Liquid file. `email-preview.html` is a static sample render for local review only — do not treat the Vite preview as canonical.
 
 **Vite snapshot backup:** the pre-iteration preview (`You're On Repeat!`, cadence as per-item bullets, Qty-only lines) is archived as tag [`vite-snapshot-backup`](https://github.com/lporter425/oh-norman-subscription-activation/tree/vite-snapshot-backup) and branch [`cursor/vite-snapshot-backup-49df`](https://github.com/lporter425/oh-norman-subscription-activation/tree/cursor/vite-snapshot-backup-49df) (commit `f04fc44`). Do not paste that snapshot into Recharge.
 
@@ -38,7 +38,7 @@ This template still shows product photos two ways:
 1. **If Recharge fills it:** `{{ item.images.src }}` (same field Upcoming order uses — send a test; if it renders, great).
 2. **Fallback:** match `item.product_title` to Oh Norman CDN images (dental wipes, Stop Effing Itching, Calm, Gut, cat SKUs, wipes, etc.). Recharge does not support Liquid `contains`; the template uses `in`.
 
-If a new SKU is added, add another `{% elif "Unique words" in item.product_title %}` block in `templates/subscription-activation.html`.
+If a new SKU is added, add another `{% elif "Unique words" in item.product_title %}` block in `oh-norman-subscription-activation.liquid`.
 
 **Omnisend vs Recharge:** Paste this HTML into **Recharge → Email → Subscription activation**. Omnisend is the right place for welcome/lifecycle flows, not this transactional receipt. If you also trigger an Omnisend automation on `recharge_started_subscription`, turn off this Recharge notification or customers get two emails. To show a product image in Omnisend, map `product_title` to a stored image the same way the fallback here does — the Recharge event will not send a photo URL.
 
@@ -46,7 +46,7 @@ If a new SKU is added, add another `{% elif "Unique words" in item.product_title
 
 1. Open **Recharge merchant portal → Email → Subscription activation**.
 2. Edit the HTML email message.
-3. Replace the body with [`templates/subscription-activation.html`](templates/subscription-activation.html).
+3. Replace the body with [`oh-norman-subscription-activation.liquid`](oh-norman-subscription-activation.liquid).
 4. Keep the `manage_subscription_link` class on the CTA (Recharge uses it).
 5. Save, then send a test from a real checkout subscription (this notification does not send when you add a subscription in the merchant portal or via API).
 
@@ -91,8 +91,9 @@ Outbound links include UTMs: `utm_source=recharge_email&utm_medium=email&utm_cam
 
 ## Files
 
-- `templates/subscription-activation.html` — **canonical** Recharge paste-in
-- `oh-norman-subscription-activation.html` — same Recharge HTML at the repo root
+- `oh-norman-subscription-activation.liquid` — **canonical** Recharge paste-in (GitHub Liquid file)
+- `templates/subscription-activation.liquid` — same Liquid, under the templates path
+- `templates/subscription-activation.html` / `oh-norman-subscription-activation.html` — identical HTML copies
 - `email-preview.html` — static sample render (not canonical)
 - `index.html` — landing page that links to the preview
 - Tag `vite-snapshot-backup` / branch `cursor/vite-snapshot-backup-49df` — archived Vite snapshot (`You're On Repeat!`); not canonical
