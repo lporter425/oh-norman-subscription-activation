@@ -82,7 +82,7 @@ Hosted on the Oh Norman Shopify CDN as **WOFF2** (`format("woff2")`). The files 
 - Burgundy full-width primary button
 - **Have questions?** and **Made For Pets** as type, not banner images
 - Dog / Cat / Gift Card nav in Sharp Grotesk Medium (font applied on the cell, link, and inner span so it holds in email clients), cream (`#F3EDE1`), no underline
-- Burgundy footer with social icons, legal links, and peeking Norman mascot
+- Burgundy footer with social icons, legal links, and peeking Norman mascot. Facebook / Instagram / TikTok icons are gold circles on burgundy (no transparent corners — those flatten to black in some email clients). Hosted in [`assets/`](assets/) on this repo so the paste-in file stays working.
 
 Outbound links include UTMs: `utm_source=recharge_email&utm_medium=email&utm_campaign=subscription_activation` plus a `utm_content` slug.
 
@@ -92,5 +92,6 @@ Outbound links include UTMs: `utm_source=recharge_email&utm_medium=email&utm_cam
 - `templates/subscription-activation.liquid` — same Liquid, under the templates path
 - `templates/subscription-activation.html` / `oh-norman-subscription-activation.html` — identical HTML copies
 - `email-preview.html` — static sample render (not canonical)
+- `assets/facebook-yellow.png`, `tiktok-yellow.png`, `instagram-yellow.png` — footer icons used by the Liquid file
 - `index.html` — landing page that links to the preview
 - Tag `vite-snapshot-backup` / branch `cursor/vite-snapshot-backup-49df` — archived Vite snapshot (`You're On Repeat!`); not canonical
