@@ -33,10 +33,7 @@ Discounts and totals stay below the items. Total uses a grey rule (matching orde
 | Recharge **Upcoming order** / Flows | **Yes.** Use `{{ item.images.src }}` on `charge.line_items`. |
 | **Omnisend** + Recharge app | **No.** The `recharge_started_subscription` event only passes `product_title`, `variant_title`, `price`, `quantity`, `order_interval_unit`, `order_interval_frequency`. |
 
-This template still shows product photos two ways:
-
-1. **If Recharge fills it:** `{{ item.images.src }}` (same field Upcoming order uses — send a test; if it renders, great).
-2. **Fallback:** match `item.product_title` to Oh Norman CDN images (dental wipes, Stop Effing Itching, Calm, Gut, cat SKUs, wipes, etc.). Recharge does not support Liquid `contains`; the template uses `in`.
+This template shows product photos by matching `item.product_title` to Oh Norman CDN images (dental wipes, Stop Effing Itching, Calm, Gut, cat SKUs, wipes, etc.). Recharge does not support Liquid `contains`; the template uses `in`. Do **not** use `item.images.src` on this email — Subscription activation line items have no `images` field, and Recharge Jinja errors with `'dict object' has no attribute 'images'`. That field is only for Upcoming order (`charge.line_items`).
 
 If a new SKU is added, add another `{% elif "Unique words" in item.product_title %}` block in `oh-norman-subscription-activation.liquid`.
 
