@@ -72,7 +72,7 @@ Load these in the email `<head>` so Gmail/Apple Mail can use the real type. Outl
 | Product titles, nav, cadence labels (`EVERY 30 DAYS`) | **Sharp Grotesk Medium** (`SharpGroteskMedium`) | Open Sans, Arial |
 | Body, buttons, footer | **Sharp Sans Book** (`SharpSans-Book`) | Open Sans, Arial |
 
-Hosted on the Oh Norman Shopify CDN. Do not swap in Inter or Poppins.
+Hosted on the Oh Norman Shopify CDN as **WOFF2** (`format("woff2")`). The files named `.woff` on the CDN are actually WOFF2; declaring `format("woff")` makes browsers skip them. Do not swap in Inter or Poppins.
 
 ## Shared chrome (from order confirmation)
 
