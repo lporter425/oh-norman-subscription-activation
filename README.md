@@ -10,6 +10,8 @@ Repo: [github.com/lporter425/oh-norman-subscription-activation](https://github.c
 
 That full Recharge/Jinja template is what to paste into the merchant portal. `email-preview.html` is a static sample render for local review only — do not treat the Vite preview as canonical.
 
+**Vite snapshot backup:** the pre-iteration preview (`You're On Repeat!`, cadence as per-item bullets, Qty-only lines) is archived as tag [`vite-snapshot-backup`](https://github.com/lporter425/oh-norman-subscription-activation/tree/vite-snapshot-backup) and branch [`cursor/vite-snapshot-backup-49df`](https://github.com/lporter425/oh-norman-subscription-activation/tree/cursor/vite-snapshot-backup-49df) (commit `f04fc44`). Do not paste that snapshot into Recharge.
+
 ## Current copy
 
 - **Headline:** You Started A New Subscription!
@@ -93,3 +95,4 @@ Outbound links include UTMs: `utm_source=recharge_email&utm_medium=email&utm_cam
 - `oh-norman-subscription-activation.html` — same Recharge HTML at the repo root
 - `email-preview.html` — static sample render (not canonical)
 - `index.html` — landing page that links to the preview
+- Tag `vite-snapshot-backup` / branch `cursor/vite-snapshot-backup-49df` — archived Vite snapshot (`You're On Repeat!`); not canonical
