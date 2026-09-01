@@ -98,21 +98,16 @@
               <td class="on-content-pad" align="left" style="background-color:#F3EDE1;padding:48px 40px 8px;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;line-height:1.4 !important;text-align:left !important;">
                 <h1 class="on-heading" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;font-weight:700 !important;color:#960000 !important;text-align:left !important;margin:0 0 20px;font-size:32px;line-height:1.4 !important;padding:0;">You Started A New Subscription!</h1>
                 <p class="on-body" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:15px;margin:0 0 16px;padding:0;">Hi {{ name }},</p>
-                <p class="on-body" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:15px;margin:0 0 28px;padding:0;">Thank you for subscribing. Your first order is locked in, and the good stuff will keep showing up — no extra errands required.</p>
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 0 8px;">
-                  <tr>
-                    <td align="center" style="background-color:#960000 !important;padding:14px 20px;text-align:center;">
-                      <a class="manage_subscription_link" href="{{ link }}" target="_blank" rel="noopener noreferrer" title="Manage subscription" style="display:block;width:100%;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#ffffff !important;text-decoration:none !important;font-size:13px;font-weight:600;line-height:1.4 !important;"><span style="color:#ffffff !important;">Manage subscription</span></a>
-                    </td>
-                  </tr>
-                </table>
-                <p style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:15px;margin:24px 0 0;padding:0;">Questions? Email us at <a href="mailto:{{ shop_email }}" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-weight:700;text-decoration:underline !important;"><span style="color:#960000 !important;text-decoration:underline !important;">{{ shop_email }}</span></a>.</p>
+                <p class="on-body" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:15px;margin:0;padding:0;">Thank you for subscribing. Your first order is locked in, and the good stuff will keep showing up — no extra errands required.</p>
               </td>
             </tr>
 
             <!-- What's next -->
             <tr>
               <td class="on-content-pad" align="left" style="background-color:#F3EDE1;padding:40px 40px 8px;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;line-height:1.4 !important;text-align:left !important;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #960000;border-radius:12px;">
+                  <tr>
+                    <td style="padding:24px;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;line-height:1.4 !important;text-align:left !important;">
                 <h2 class="on-section-headline" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;font-weight:700 !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:25px;margin:0 0 16px;padding:0;">What’s next</h2>
                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
@@ -121,11 +116,14 @@
                   </tr>
                   <tr>
                     <td class="on-step" valign="top" width="28" style="width:28px;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 8px 12px 0;">2.</td>
-                    <td class="on-step" valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 0 12px;">The next box is charged automatically on the schedule below.</td>
+                    <td class="on-step" valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 0 12px;">The next order is charged automatically on the schedule below.</td>
                   </tr>
                   <tr>
                     <td class="on-step" valign="top" width="28" style="width:28px;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 8px 0 0;">3.</td>
                     <td class="on-step" valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0;">Skip, swap, or cancel anytime from Manage subscription.</td>
+                  </tr>
+                </table>
+                    </td>
                   </tr>
                 </table>
               </td>
@@ -258,6 +256,13 @@
                 {% if discount_code %}
                 <p style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:12px;line-height:1.4 !important;font-style:italic;margin:12px 0 0;padding:0;text-align:left !important;">Your total today reflects an applied discount of {{ total_discounts | amount_with_currency(charge_currency, display_currency_code=False) }}. After the discount charge limit is reached, your total will increase by the discounted amount.</p>
                 {% endif %}
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:24px 0 0;">
+                  <tr>
+                    <td align="center" style="background-color:#960000 !important;padding:14px 20px;text-align:center;">
+                      <a class="manage_subscription_link" href="{{ link }}" target="_blank" rel="noopener noreferrer" title="Manage subscription" style="display:block;width:100%;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#ffffff !important;text-decoration:none !important;font-size:13px;font-weight:600;line-height:1.4 !important;"><span style="color:#ffffff !important;">Manage subscription</span></a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
 

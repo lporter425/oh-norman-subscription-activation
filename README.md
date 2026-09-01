@@ -15,11 +15,11 @@ That full Recharge template is what to paste into the merchant portal. HTML copi
 ## Current copy
 
 - **Headline:** You Started A New Subscription!
-- **Intro:** Thanks for subscribing, first order is locked in
-- **Primary button:** Manage subscription (`{{ link }}` — Recharge customer portal magic link)
-- **What’s next:** Shipping email, automatic next box, skip/swap/cancel anytime
+- **Intro:** Thanks for subscribing, first order is locked in (no questions line above the fold)
+- **What’s next:** Rounded burgundy outline; shipping email, automatic next order, skip/swap/cancel anytime
 - **Cadence:** `EVERY 30 DAYS` (and other intervals) rendered **above** the items in that group
 - **Line items:** `Qty × unit price`, with line total on the right (`item.price` is the per-unit subscription price)
+- **Primary button:** Manage subscription (`{{ link }}`) sits **below** the legal copy
 
 Discounts and totals stay below the items. Total uses a grey rule (matching order confirmation), not a red subtotal divider.
 
