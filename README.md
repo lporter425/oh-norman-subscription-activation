@@ -4,13 +4,22 @@ Recharge **Subscription activation** notification for [Oh Norman](https://ohnorm
 
 Repo: [github.com/lporter425/oh-norman-subscription-activation](https://github.com/lporter425/oh-norman-subscription-activation)
 
+## Source of truth
+
+**Canonical file:** [`templates/subscription-activation.html`](templates/subscription-activation.html) (also copied to [`oh-norman-subscription-activation.html`](oh-norman-subscription-activation.html) at the repo root).
+
+That full Recharge/Jinja template is what to paste into the merchant portal. `email-preview.html` is a static sample render for local review only — do not treat the Vite preview as canonical.
+
 ## Current copy
 
-- **Headline:** You're On Repeat!
-- **Intro:** Thanks for subscribing, first order is locked in, skip/swap/cancel anytime
+- **Headline:** You Started A New Subscription!
+- **Intro:** Thanks for subscribing, first order is locked in
 - **Primary button:** Manage subscription (`{{ link }}` — Recharge customer portal magic link)
+- **What’s next:** Shipping email, automatic next box, skip/swap/cancel anytime
+- **Cadence:** `EVERY 30 DAYS` (and other intervals) rendered **above** the items in that group
+- **Line items:** `Qty × unit price`, with line total on the right (`item.price` is the per-unit subscription price)
 
-Subscription line items, cadence, next charge, discounts, and totals stay below that intro.
+Discounts and totals stay below the items. Total uses a grey rule (matching order confirmation), not a red subtotal divider.
 
 ## Does Recharge let you show a product image?
 
@@ -60,8 +69,8 @@ Load these in the email `<head>` so Gmail/Apple Mail can use the real type. Outl
 
 | Role | Font | Fallback |
 | --- | --- | --- |
-| Headlines (`You're On Repeat!`, section titles) | **Sharp Grotesk Bold** (`SharpGroteskBold`) | Open Sans, Arial Black in Outlook |
-| Product titles, nav | **Sharp Grotesk Medium** (`SharpGroteskMedium`) | Open Sans, Arial |
+| Headlines (`You Started A New Subscription!`, What’s next, section titles) | **Sharp Grotesk Bold** (`SharpGroteskBold`) | Open Sans, Arial Black in Outlook |
+| Product titles, nav, cadence labels (`EVERY 30 DAYS`) | **Sharp Grotesk Medium** (`SharpGroteskMedium`) | Open Sans, Arial |
 | Body, buttons, footer | **Sharp Sans Book** (`SharpSans-Book`) | Open Sans, Arial |
 
 Hosted on the Oh Norman Shopify CDN. Do not swap in Inter or Poppins.
@@ -80,7 +89,7 @@ Outbound links include UTMs: `utm_source=recharge_email&utm_medium=email&utm_cam
 
 ## Files
 
-- `templates/subscription-activation.html` — paste into Recharge
+- `templates/subscription-activation.html` — **canonical** Recharge paste-in
 - `oh-norman-subscription-activation.html` — same Recharge HTML at the repo root
-- `email-preview.html` — static preview with sample subscription data
+- `email-preview.html` — static sample render (not canonical)
 - `index.html` — landing page that links to the preview

@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>You're On Repeat!</title>
+  <title>You Started A New Subscription!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
@@ -50,6 +50,8 @@
     .on-heading { font-family: "SharpGroteskBold", "Open Sans", Arial, sans-serif !important; font-weight: 700 !important; color: #960000 !important; text-align: left !important; margin: 0 0 20px; font-size: 32px; line-height: 1.4 !important; padding: 0; }
     .on-body { font-family: "SharpSans-Book", "Open Sans", Arial, sans-serif !important; color: #960000 !important; text-align: left !important; line-height: 1.4 !important; font-size: 15px; margin: 0 0 28px; padding: 0; }
     .on-section-headline { font-family: "SharpGroteskBold", "Open Sans", Arial, sans-serif !important; font-weight: 700 !important; color: #960000 !important; text-align: left !important; line-height: 1.4 !important; font-size: 25px; margin: 0 0 16px; padding: 0; }
+    .on-cadence { font-family: "SharpGroteskMedium", "Open Sans", Arial, sans-serif !important; font-weight: 500 !important; color: #960000 !important; text-align: left !important; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; line-height: 1.4 !important; margin: 0 0 16px; padding: 0; }
+    .on-step { font-family: "SharpSans-Book", "Open Sans", Arial, sans-serif !important; color: #960000 !important; text-align: left !important; line-height: 1.4 !important; font-size: 15px; }
     .on-nav a,
     .on-nav a:link,
     .on-nav a:visited,
@@ -65,12 +67,12 @@
   <!--[if mso]>
   <style type="text/css">
     body, table, td, p { font-family: Arial, sans-serif !important; }
-    h1, h2, h3, h4, .on-heading, .on-section-headline, .on-nav-link, .on-nav-link span { font-family: Arial Black, Arial, sans-serif !important; }
+    h1, h2, h3, h4, .on-heading, .on-section-headline, .on-cadence, .on-nav-link, .on-nav-link span { font-family: Arial Black, Arial, sans-serif !important; }
   </style>
   <![endif]-->
 </head>
 <body style="margin:0;padding:0;background-color:#F3EDE1;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;line-height:1.4 !important;text-align:left !important;">
-  <!--[if !gte mso 9]><!--><span class="rc_preview-text" style="display:none;font-size:0;line-height:0;max-height:0;max-width:0;opacity:0;overflow:hidden;visibility:hidden;mso-hide:all;">You're on repeat. Here’s your subscription confirmation.</span><!--<![endif]-->
+  <!--[if !gte mso 9]><!--><span class="rc_preview-text" style="display:none;font-size:0;line-height:0;max-height:0;max-width:0;opacity:0;overflow:hidden;visibility:hidden;mso-hide:all;">You started a new subscription. Here’s what’s next.</span><!--<![endif]-->
   <center>
     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#F3EDE1;">
       <tr>
@@ -94,9 +96,9 @@
             <!-- Intro -->
             <tr>
               <td class="on-content-pad" align="left" style="background-color:#F3EDE1;padding:48px 40px 8px;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;line-height:1.4 !important;text-align:left !important;">
-                <h1 class="on-heading" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;font-weight:700 !important;color:#960000 !important;text-align:left !important;margin:0 0 20px;font-size:32px;line-height:1.4 !important;padding:0;">You're On Repeat!</h1>
+                <h1 class="on-heading" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;font-weight:700 !important;color:#960000 !important;text-align:left !important;margin:0 0 20px;font-size:32px;line-height:1.4 !important;padding:0;">You Started A New Subscription!</h1>
                 <p class="on-body" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:15px;margin:0 0 16px;padding:0;">Hi {{ name }},</p>
-                <p class="on-body" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:15px;margin:0 0 28px;padding:0;">Thank you for subscribing. Your first order is locked in, and the good stuff will keep showing up — no extra errands required. Review your details below. You can skip, swap, or cancel anytime.</p>
+                <p class="on-body" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:15px;margin:0 0 28px;padding:0;">Thank you for subscribing. Your first order is locked in, and the good stuff will keep showing up — no extra errands required.</p>
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 0 8px;">
                   <tr>
                     <td align="center" style="background-color:#960000 !important;padding:14px 20px;text-align:center;">
@@ -108,11 +110,43 @@
               </td>
             </tr>
 
+            <!-- What's next -->
+            <tr>
+              <td class="on-content-pad" align="left" style="background-color:#F3EDE1;padding:40px 40px 8px;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;line-height:1.4 !important;text-align:left !important;">
+                <h2 class="on-section-headline" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;font-weight:700 !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:25px;margin:0 0 16px;padding:0;">What’s next</h2>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td class="on-step" valign="top" width="28" style="width:28px;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 8px 12px 0;">1.</td>
+                    <td class="on-step" valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 0 12px;">We’ll email you when your first order ships.</td>
+                  </tr>
+                  <tr>
+                    <td class="on-step" valign="top" width="28" style="width:28px;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 8px 12px 0;">2.</td>
+                    <td class="on-step" valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 0 12px;">The next box is charged automatically on the schedule below.</td>
+                  </tr>
+                  <tr>
+                    <td class="on-step" valign="top" width="28" style="width:28px;font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0 8px 0 0;">3.</td>
+                    <td class="on-step" valign="top" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:15px;line-height:1.4 !important;padding:0;">Skip, swap, or cancel anytime from Manage subscription.</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
             <!-- Subscription details -->
             <tr>
               <td class="on-content-pad" style="background-color:#F3EDE1;padding:40px 40px 8px;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;line-height:1.4 !important;text-align:left !important;">
                 <h2 class="on-section-headline" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;font-weight:700 !important;color:#960000 !important;text-align:left !important;line-height:1.4 !important;font-size:25px;margin:0 0 16px;padding:0;">Your subscription</h2>
 {% for item in line_items %}
+                {% if loop.first or item.charge_interval_frequency != line_items[loop.index0 - 1].charge_interval_frequency or item.order_interval_unit != line_items[loop.index0 - 1].order_interval_unit %}
+                <p class="on-cadence" style="font-family:'SharpGroteskMedium', 'Open Sans', Arial, sans-serif !important;font-weight:500 !important;color:#960000 !important;text-align:left !important;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;line-height:1.4 !important;margin:{% if loop.first %}0 0 16px{% else %}24px 0 16px{% endif %};padding:0;">
+                  {% if item.charge_interval_frequency | int > 1 %}
+                    EVERY {{ item.charge_interval_frequency }} {{ item.order_interval_unit | upper }}S
+                  {% elif item.charge_interval_frequency | int == 1 %}
+                    EVERY {{ item.order_interval_unit | upper }}
+                  {% else %}
+                    ONE-TIME
+                  {% endif %}
+                </p>
+                {% endif %}
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 0 16px;">
                   <tr>
                     <td valign="top" width="76" style="width:76px;padding:0 12px 0 0;">
@@ -169,26 +203,20 @@
                       {% endif %}
                       <div style="margin:8px 0 0;font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4 !important;">
                         {% if item.quantity %}
-                          <div style="margin:0 0 4px;">&bull;&nbsp;Qty {{ item.quantity }}</div>
-                        {% endif %}
-                        {% if item.charge_interval_frequency | int > 1 %}
-                          <div style="margin:0 0 4px;">&bull;&nbsp;Charges every {{ item.charge_interval_frequency }} {{ item.order_interval_unit | lower }}s</div>
-                        {% elif item.charge_interval_frequency | int == 1 %}
-                          <div style="margin:0 0 4px;">&bull;&nbsp;Charges every {{ item.order_interval_unit | lower }}</div>
-                        {% else %}
-                          <div style="margin:0 0 4px;">&bull;&nbsp;One-time product</div>
-                        {% endif %}
-                        {% if item.next_charge_date %}
-                          <div style="margin:0 0 4px;">&bull;&nbsp;Next charge {{ item.next_charge_date }}</div>
+                          <div>&middot;&nbsp;Qty {{ item.quantity }} &times; {{ item.price | amount_with_currency(charge_currency, display_currency_code=False) }}</div>
                         {% endif %}
                         {% if item.number_charges_until_expiration %}
-                          <div style="margin:0;">&bull;&nbsp;Expires after {{ item.number_charges_until_expiration }}
+                          <div style="margin:4px 0 0;">Expires after {{ item.number_charges_until_expiration }}
                           {% if item.number_charges_until_expiration | int == 1 %}charge{% else %}charges{% endif %}</div>
                         {% endif %}
                       </div>
                     </td>
                     <td valign="top" align="right" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4 !important;text-align:right;white-space:nowrap;padding-left:8px;">
-                      {{ item.price | amount_with_currency(charge_currency, display_currency_code=False) }}
+                      {% if item.quantity %}
+                        {{ (item.price * item.quantity) | amount_with_currency(charge_currency, display_currency_code=False) }}
+                      {% else %}
+                        {{ item.price | amount_with_currency(charge_currency, display_currency_code=False) }}
+                      {% endif %}
                     </td>
                   </tr>
                 </table>
@@ -203,7 +231,7 @@
                 </table>
 {% endif %}
 
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top:1px solid #960000;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
                     <td style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4 !important;padding:12px 0 6px;">Subtotal</td>
                     <td align="right" style="font-family:'SharpSans-Book', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:14px;line-height:1.4 !important;text-align:right;padding:12px 0 6px;">{{ subtotal_price | amount_with_currency(charge_currency, display_currency_code=False) }}</td>
@@ -223,8 +251,8 @@
                   </tr>
                   {% endif %}
                   <tr>
-                    <td style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:16px;font-weight:700 !important;line-height:1.4 !important;padding:12px 0 4px;">Total</td>
-                    <td align="right" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:16px;font-weight:700 !important;line-height:1.4 !important;text-align:right;padding:12px 0 4px;">{{ total_price | amount_with_currency(charge_currency, display_currency_code=True) }}</td>
+                    <td style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:16px;font-weight:700 !important;line-height:1.4 !important;padding:12px 0 4px;border-top:1px solid #cccccc;">Total</td>
+                    <td align="right" style="font-family:'SharpGroteskBold', 'Open Sans', Arial, sans-serif !important;color:#960000 !important;font-size:16px;font-weight:700 !important;line-height:1.4 !important;text-align:right;padding:12px 0 4px;border-top:1px solid #cccccc;">{{ total_price | amount_with_currency(charge_currency, display_currency_code=True) }}</td>
                   </tr>
                 </table>
 
